@@ -121,7 +121,7 @@ The ActiveMQ server should be available at [http://localhost:8161/admin](http://
 ## Testing ActiveMQ
 Before running the applications, make sure to change the server port for one of the projects. The embedded tomcat server runs on the port 8080 by default.
 
-Run both the applications and run the URL `http://localhost:8080/api/message/Welcome to activemq` in browser or any REST API testing tool.
+Run both the applications and run the URL `http://localhost:1234/api/message/Welcome to activemq` in browser or any REST API testing tool.
 
 In the consumer application, we will see the following log in console.
 ```
