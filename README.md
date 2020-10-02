@@ -131,14 +131,14 @@ What just happened is that the message was put on the queue. The consumer applic
 
 In the ActiveMQ dashboard, navigate to the Queue tab. We can see the details such as a number of consumers to a queue, the number is messages pending, queued and dequeued.
 
-![ActiveMQ Dashboard](https://github.com/JavaWiz/sb-activemq/blob/master/dashboard.png)
+![ActiveMQ Dashboard](https://github.com/JavaWiz/sb-activemq/blob/master/dashboard.PNG)
 
 ActiveMq message brokers guarantee delivery of messages. Imagine that the consumer service is down, and the message was put on the queue by publisher service.
 
 Stop the application  `activemq-subscriber` . Run the URL again with messages in browser.
 
 Navigate to the ActiveMQ dashboard and notice the queue state.
-![Queue State](https://github.com/JavaWiz/sb-activemq/blob/master/queue_state.png)
+![Queue State](https://github.com/JavaWiz/sb-activemq/blob/master/queue_state.PNG)
 
 We can see that 3 messages are pending and enqueued. Start the application activemq-receiver again.
 
@@ -149,7 +149,7 @@ As soon as the application is started, we will the following message in console.
 2020-10-02 18:36:06.506  INFO 22180 --- [enerContainer-1] com.javawiz.service.Subscriber           : Message received test
 ```
 The number of pending messages are now set to zero and the number of dequeued messages is set to 4. The message broker guarantees the delivery of messages.
-![Queue State](https://github.com/JavaWiz/sb-activemq/blob/master/queue_state_after.png) 
+![Queue State](https://github.com/JavaWiz/sb-activemq/blob/master/queue_state_after.PNG) 
 
 ### Reference Documentation
 For further reference, please consider the following sections:
